@@ -1,0 +1,39 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// font-awesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+.board {
+  .comment {
+
+    &:not(:last-child) {
+      @extend .border-bottom;
+      @extend .mb-2;
+    }
+
+    .comment-header {
+    }
+    .comment-content {
+      .comment-time {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .board-dropdown-menu {
+    a:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.like-icon {
+  color: #F42F4B;
+}
