@@ -1,0 +1,8 @@
+language: php
+php:
+- 7.1.3
+- script: phpunit
+notifications:
+  slack:
+    rooms:
+      - secure: OgD5Jepdde7s10vW1Pv/H/NS6AoqYXGOOgddzvbkn+UzOZMfzx1itVUUn1dX3hX3EkVy8wg1//Hnas1Ex23OnS9E70M0o0E0Yw2sPZbMBbMW8CJzzjpyPnwTjlOIGNY7oCIDSFn03d+m4DDYdRPqdz77EoKtyQ2Uu2RSn4LfV+E/Vf6u+P/wrBa1qqNn/gfw8KaV0wvyrF1QFlhByvp7ZqWg5A1pHX0Trycimsk5u1lZHqbWbEZfvv5HSRlR0WtVP3O0vIajdWm5bEI5fOBy07SZV+KjI35pF4ekSWFgfQvQiHeut8sMFfJoAqxFgvCyN00DcqJxIZ94Fg971hZ5JW9AS+8/Pgm6foE25D1ktUuyXAv7b01gG+RCQ3BJRTq+g2MRsZzSebSe2ogSYLGjMFkl33g7fBNgrY62F0ZS7HkKJBZQL1Ap/8R17x2sKtM1iepZnXcgtZoTh1QvBtk/syKwsoqQ6hX18oS5Hdtv4gUqGdnuRReg7wlHrEAyMIvlHP4eHP0UxoiPfERizpchCt4JcO6fa39RX2qZ6IHxDWC44loS7/cLFnuDBNAuhK/Df47IwCkrGU5Rh2uRIaSCQZ7vknkC/mmkgNnwa+VSCpFfT/SQf6/gnOnuu0tMbWUHySJ8Pxl5bzWZwj0a7LVeRSSQueVwiHbzthfbgU7/7ig=#board2

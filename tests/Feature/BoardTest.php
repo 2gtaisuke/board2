@@ -43,6 +43,7 @@ class BoardTest extends TestCase
                 'comment' => [
                     'content' => $content
                 ],
+                'tags' => 'foo bar'
             ]
         );
 
@@ -55,6 +56,10 @@ class BoardTest extends TestCase
         $this->assertDatabaseHas(
             'comments',
             ['content' => $content]
+        );
+        $this->assertDatabaseHas(
+            'tags',
+            ['name' => 'foo']
         );
     }
 
@@ -165,7 +170,7 @@ class BoardTest extends TestCase
             ->post(
                 route('board.like', ['id' => $board->id])
             )
-            ->assertStatus(204);
+            ->assertStatus(200);
 
         $this->assertTrue($board_owned_user->isLike($board));
     }
@@ -205,7 +210,7 @@ class BoardTest extends TestCase
             ->post(
                 route('board.like', ['id' => $board->id])
             )
-            ->assertStatus(409);
+            ->assertStatus(200);
 
         $this->assertFalse($board_owned_user->isLike($board));
     }
